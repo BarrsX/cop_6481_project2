@@ -1,0 +1,7 @@
+version: "2.0"
+intents:
+  - check_balance
+  - transfer_funds
+actions:
+  - action_check_balance
+  - action_transfer_funds

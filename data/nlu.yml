@@ -1,0 +1,12 @@
+version: "2.0"
+nlu:
+  - intent: check_balance
+    examples: |
+      - What's my balance?
+      - How much money do I have?
+      - Can you tell me my account balance?
+  - intent: transfer_funds
+    examples: |
+      - I want to transfer money
+      - Send $100 to my savings account
+      - Can you move some money for me?
