@@ -1,12 +1,245 @@
-version: "2.0"
+version: "3.1"
+
 nlu:
-  - intent: check_balance
-    examples: |
-      - What's my balance?
-      - How much money do I have?
-      - Can you tell me my account balance?
-  - intent: transfer_funds
-    examples: |
-      - I want to transfer money
-      - Send $100 to my savings account
-      - Can you move some money for me?
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+nlu:
+- intent: check_balance
+  examples: |
+    - What's my account balance?
+    - How much money do I have in my savings account?
+    - Show me my checking account balance.
+    - What is the balance of my retirement account?
+    - How much money do I have in my investment account?
+    - What's the balance of my mortgage account?
+    - How much money do I have in my loan account?
+    - Show me my line of credit balance.
+    - What is the balance of my college fund account?
+    - How much money do I have in my credit card account?
+
+- intent: transfer_funds
+  examples: |
+    - Transfer $100 from checking to savings
+    - Send $50 to John for dinner
+    - I want to move some money to my savings account
+
+- intent: pay_bill
+  examples: |
+    - Pay my electricity bill
+    - Make a payment for my credit card
+    - I need to pay my rent
+
+- intent: ask_budgeting_advice
+  examples: |
+    - How can I save more money?
+    - Tips for budgeting
+    - Help me with my budget
+    - How can I save more money?
+    - How can I save more money?
+    - How can I save more money?
+    - How can I save more money?
+    - How can I save more money?
+
+- entity: account_type
+  examples: |
+    - savings
+    - checking
+    - credit card
+    - investment
+    - mortgage
+    - loan
+    - line of credit
+    - retirement
+    - college fund
+
+- entity: amount_of_money
+  examples: |
+    - $100
+    - 50 dollars
+    - 25 bucks
+    - 60
+    
+
+- entity: recipient
+  examples: |
+    - John
+    - my brother
+    - my friend
+    - my landlord
+    - my sister
+    - my mom
+    - my dad
+    - my roommate
+    - my girlfriend
+    - my boyfriend
+    - my wife
+    - my husband
+    - my colleague
+    - my boss
+    - my assistant
+    - my teacher
+    - my doctor
+    - my dentist
+    - my accountant
+    - my lawyer
+    - my therapist
+    - my coach
+    - my trainer
+    - my instructor
+    - my neighbor
+    - my classmate
+    - my student
+    - my client
+    - my customer
+    - my patient
+    - my audience
+    - my fan
+    - my follower
+    - my subscriber
+    - my reader
+    - my viewer
+    - my listener
+    - my user
+    - my member
+    - my guest
+    - my visitor
+    - my fan
+    - my supporter
+    - my friend
+    - my buddy
+    - my pal
+    - my mate
+    - my partner
+    - my colleague
+    - my co-worker
+    - my associate
+    - my ally
+    - my comrade
+    - my confidant
+    - my mentor
+    - my role model
+    - my hero
+    - my idol
+    - my inspiration
+    - my motivation
+    - my muse
+    - my guide
+    - my advisor
+    - my consultant
+    - my expert
+    - my specialist
+    - my professional
+    - my master
+    - my leader
+    - my boss
+    - my manager
+    - my director
+    - my executive
+    - my president
+    - my CEO
+    - my founder
+    - my entrepreneur
+    - my owner
+    - my investor
+    - my shareholder
+    - my stakeholder
+    - my partner
+    - my collaborator
+    - my co-founder
+    - my co-owner
+    - my co-investor
+    - my co-worker
+    - my co-creator
+    - my co-author
+    - my co-pilot
+    - my co-driver
+    - my co-captain
+    - my co-counsel
+    - my co-presenter
