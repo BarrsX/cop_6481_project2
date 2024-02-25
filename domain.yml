@@ -9,6 +9,15 @@ intents:
   - mood_unhappy
   - bot_challenge
 
+entities:
+  - account_type
+  - amount_of_money
+  - recipient
+
+actions:
+  - action_check_balance
+  - action_transfer_funds
+
 responses:
   utter_greet:
     - text: "Hey! How are you?"
