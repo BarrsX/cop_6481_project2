@@ -47,4 +47,4 @@ slots:
     type: text
     influence_conversation: false
     mappings:
-      - type: from_text
+      - type: custom
